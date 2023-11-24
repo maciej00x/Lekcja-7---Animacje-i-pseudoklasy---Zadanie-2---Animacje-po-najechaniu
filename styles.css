@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 3px solid transparent; /* Ustawienie początkowego przezroczystego obramowania */
+  transition: border-color 1s; /* Dodanie efektu przejścia dla płynnego przejścia obramowania */
+}
+
+.box:hover {
+  border-color: black; /* Zmiana koloru obramowania po najechaniu myszką */
+}
