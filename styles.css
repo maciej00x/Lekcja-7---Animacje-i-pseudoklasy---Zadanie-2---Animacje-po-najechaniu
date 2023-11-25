@@ -5,10 +5,28 @@
 .box {
   width: 300px;
   height: 300px;
-  border: 3px solid transparent; /* Ustawienie początkowego przezroczystego obramowania */
-  transition: border-color 1s; /* Dodanie efektu przejścia dla płynnego przejścia obramowania */
+  transition-duration: 1s; /* Dodanie efektu przejścia dla płynnego przejścia obramowania */
+  transition-property: border; /* Dodanie efektu przejścia dla płynnego przejścia obramowania */
+  background-color: red;
 }
 
 .box:hover {
-  border-color: black; /* Zmiana koloru obramowania po najechaniu myszką */
+  border: 3px solid black; /* Ustawienie początkowego przezroczystego obramowania */
+  /*border-color: black;  Zmiana koloru obramowania po najechaniu myszką */
 }
+
+/* 
+
+wcześniejsze rozwiązanie z SHORTHAND (shorthand to po prostu skrócona wersja kodu)
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 3px solid transparent; /* Ustawienie początkowego przezroczystego obramowania 
+  transition: border-color 1s; /* Dodanie efektu przejścia dla płynnego przejścia obramowania 
+}
+
+.box:hover {
+  border-color: black; /* Zmiana koloru obramowania po najechaniu myszką 
+}
+*/
